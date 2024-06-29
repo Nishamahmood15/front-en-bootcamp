@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --main-color:#deab5f;
+    --primary-collor:#312e2e;
+}
+
+/*Utility styles*/
+button {
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+button:hover{
+    border: 1px solid var(--main-color);
+    background: var(--primary-collor);
+    color: white;
+}
+/*Resets*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #10030f;
+}
+
+/*Nav styles*/
+.logo:hover{
+    font-family: serif;
+    color: #deab5f;
+    text-shadow: #645a5a;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 15px;
+    z-index: 100;
+
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px ;
+    padding-bottom: 10px;
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+}
+
+/*Nav End*/
+
+/*Header start*/
+ 
+.header{
+    background: url("https://img.freepik.com/premium-photo/small-cup-black-coffee-dark-background-with-coffee-beans_155165-7704.jpg" );
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+    font-family: serif;
+    font-weight: normal;
+    /*flexbox*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     position: relative;
+     text-align: center;
+}
+
+.main-headings {
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+
+.primary-headings {
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -10px;
+}
+
+.main-btn{
+    position: absolute;
+    bottom: 4rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: transparent;
+    background: var(--main-color);
+    transform: translateY(60px);
+}
+/*OUR STORY start*/
+#our-story{
+   /* height: 100vh;*/
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.img{
+    width: 400px;
+    height: 400px;
+    background: url("https://st3.depositphotos.com/8911320/14655/i/450/depositphotos_146553247-stock-photo-hot-drink-coffee-on-black.jpg");
+    background-position:right;
+    background-size: cover;
+}
+
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family: serif;
+    font-size: 4rem;
+    color: white;
+    transform: translateX(-100px);
+}
+
+.line{
+    width: 10px;
+    height: 2px;
+    background: white;
+    transform: translateX(-120px);
+}
+
+.section-content p{
+    max-width: 500px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+/*OUR STORY end*/
+
+
+/*Coffe start*/
+.coffee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.img-2{
+    width :400px;
+    height: auto;
+}
+
+.title-two{
+    font-size: 3rem;
+    color: white;
+    font-family: serif;
+}
+
+.content-section p{
+    max-width: 500px;
+    margin-top:20px;
+    font-family: sans-serif;
+    color: white;
+   }
+
+   /*Products section*/
+
+
+   .products{
+    margin-top: 5rem;
+
+   }
+
+   .title-three{
+    font-size: 4rem;
+     margin: 10rem 0 10rem 10rem;
+   }
+
+   .cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+   }
+   .card:hover{
+    border: 4px solid var(--main-color);
+    font-size: 20px;
+   }
+
+   .card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    border-radius: 50%;
+    border:  2px solid var(--main-color);
+   }
+   .img-one{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfyLE95R_zP4V9hTV1BH2YIMF0Sbl9yQ54R5cDEGGhjVs4oCnkD1RpJtR3t8rWoQTJtKQ&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+   }
+   .img-two{
+    background: url("https://bakingmischief.com/wp-content/uploads/2019/05/iced-mocha-image-square.jpg");
+    background-position: center;
+    background-size: cover;
+   }
+   .img-three{
+    background: url("https://grindhouseafrica.com/wp-content/uploads/2023/05/black-coffee-benefits.jpg");
+    background-position: center;
+    background-size: cover;
+   }
+   .card-title{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 50px;
+   }
+   .card-items{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+   }
+
+   /*products end*/
+
+   /*footer*/
+   footer{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+   }
+
+   footer .container{
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+   }
+   footer.heading-info{
+    margin-bottom: 20px ;
+   }
+   footer p{
+    line-height: 20px;
+    text-align: center;
+   }
+   span{
+    color: var(--main-color);
+   }
+   hr{
+    margin-bottom: 20px;
+    border: 1px solid var(--main-color) ;
+   }
+
+   .para{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+   }
+
+   /*responsiveness*/
+
+   @media screen and (max-width:786px) {
+    .main-headings, .primary-headings{
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story.title{
+        transform: translateX(50px);
+    }
+    #our-story .line{
+        display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+    #our-story .img-container .img{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .coffee-container .img-container{
+        margin-top: 5rem;
+        width: 50%;
+        
+    }
+    .title{
+        margin: 0 auto;
+    }
+    .title-two{
+        margin: 0 auto;
+    }
+    .title-three{
+       display: none;
+    }
+    .para{
+        display: none;
+    }
+   }

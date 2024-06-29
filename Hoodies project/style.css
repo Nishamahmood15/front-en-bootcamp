@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*font-family: "Playfair Display", serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #239b7e;
+    --main-font: "Playfair Display", serif;
+    --primary-font: "Roboto", sans-serif;
+}
+
+/*Nav start*/
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    position:sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    list-style: none;
+}
+
+.nav-links ul a {
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+.nav-links li {
+    color: white;
+    font-family: var(--primary-font);
+}
+
+.nav-links li:hover {
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5rem;
+}
+
+.burger span {
+    border: 2px solid var(--main-color);
+    width: 40px;
+    height: 1px;
+    margin: 2px;
+}
+
+
+/*Header Start*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    margin-top: 2rem;
+}
+
+.main-headings {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    transform: translateY(-40px);
+    color: rgb(105, 103, 98);
+    line-height: 5rem;
+}
+
+.main-headings span {
+    color: black;
+}
+
+.primary-headings {
+    max-width: 500px;
+    font-family: var(--primary-font);
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color: #b1adad;
+}
+
+.btn-fill {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn-fill:hover {
+    background-color: white;
+    border: 2px solid var(--main-color);
+    color: black;
+}
+
+.btn-outline.active {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn-outline.active:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+.img-container {
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px rgb(181, 181, 181);
+}
+
+.header-img {
+    border-radius: 100%;
+    background: url("https://c0.wallpaperflare.com/preview/476/796/844/man-wearing-yellow-pullover-hoodie-thumbnail.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+/*Section One*/
+
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.section-one-img {
+    background: url("https://images.asos-media.com/products/asos-design-two-piece-lounge-oversized-cocoon-hoodie-in-sage/13816708-3?$n_640w$&wid=513&fit=constrain");
+    background-size: cover;
+    background-position: top;
+}
+
+/*Products*/
+.products {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.products .products-heading {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin: 3rem;
+
+}
+
+.products .products-categories button {
+    margin-right: 20px;
+    margin-bottom: 2rem;
+}
+
+.products .product-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-width: 60rem;
+}
+
+.products .product-items-container .item {
+    margin: 20px;
+}
+.products .product-items-container .item-layer:hover{
+    border:2px solid #333;
+    background-color:rgb(237, 248, 243);
+}
+
+
+.products .product-items-container .item-layer {
+    background: #ffffff;
+    padding: 40px;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+.products .product-items-container .item-layer img {
+    width: 180px;
+    height: 200px;
+}
+
+.products .product-items-container .item-name {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+
+}
+
+.products .product-items-container .item-price {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.products .product-items-container .item .view-product {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #239b7e;
+    border-bottom: 1px solid var(--main-color);
+}
+
+/*Customer reviews*/
+.customer-reviews {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer {
+    text-align: center;
+}
+
+.customer-heading {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.customer-reviews .customer-description {
+    font-size: 12px;
+    margin-top: 20px;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.customer .customer-img .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.customer .img-one {
+    background: url("https://www.shutterstock.com/editorial/image-editorial/OeT5c637N5jcIcw0NzY5Mg==/elsa-hosk-1500w-9704145c.jpg");
+}
+
+.customer .img-two {
+    background: url("https://i1.rgstatic.net/ii/profile.image/1113619936878592-1642519091243_Q512/Anna-Doel.jpg");
+}
+
+.customer .img-three {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-QwmcLUttvLM4CpvJEt2_N5vCZFJ1g3N8w&s");
+}
+
+/*footer*/
+footer {
+    background: #333;
+    margin-top: 10rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--primary-font);
+
+}
+
+footer .container .footer-heading {
+    margin-bottom: 3rem;
+
+}
+
+.footer-primary-heading {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*Responsiveness*/
+
+@media only screen and (max-width:900px) {
+    header {
+        height: 120vh;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+
+    .section-one {
+        height: 120vh;
+        text-align: center;
+    }
+
+    .header-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-headings {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .primary-headings {
+        width: 400px;
+    }
+
+    .customer-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .customer-name {
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .products-categories{
+        align-items: center;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
