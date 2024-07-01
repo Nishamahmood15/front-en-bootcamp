@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*font-family: "Playfair Display", serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #e3e8e4;
+    --primary-color: #363636;
+    --main-font: "Playfair Display", serif;
+}
+
+/*Nav*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 4rem;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    padding: 10px;
+}
+
+.btn-fill {
+    padding: 10px 30px;
+    background: var(--primary-color);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-fill:hover {
+    background: var(--main-color);
+    color: rgb(0, 0, 0);
+    transform: translateX(2px);
+    transition-duration: 0.5s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(2px);
+    transition-duration: 0.5s;
+}
+
+/*Header Section*/
+.btn-outline {
+    background: var(--main-color);
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 100px;
+
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(2px);
+    transition-duration: 0.5s;
+    border: 2px solid var(--main-color);
+}
+
+/*Header*/
+header {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container {
+    margin-left: 6rem;
+}
+
+.main-heading {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: #737272;
+    margin-bottom: 2rem;
+}
+
+.main-heading span {
+    color: black;
+}
+
+.primary-heading {
+    max-width: 500px;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    line-height: 25px;
+}
+
+.img-container img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+}
+
+/*Popularity section*/
+.popularity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.popularity div {
+    margin-right: 3rem;
+}
+
+.popularity div h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #5a5959;
+    font-family: var(--main-font);
+}
+
+.popularity div p {
+    color: #5c5858;
+    font-family: sans-serif;
+}
+
+/*Product section*/
+.products-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.product-img-layer {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: rgb(195, 197, 200);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position:top;
+}
+
+.product-img-layer.img-one {
+    background-image: url("https://i.pinimg.com/originals/7b/7a/e6/7b7ae6371c1adcee2ff88de3d51e09b6.png");
+}
+
+.product-img-layer.img-two {
+    background-image: url("https://banner2.cleanpng.com/20180927/gqx/kisspng-office-desk-chairs-table-biuras-furniture-office-lounge-carmen-2-7-ivory-price-76-8-eur-5bad4a15013ef8.5026610415380833490051.jpg");
+}
+
+.product-img-layer.img-three {
+    background-image: url("https://www.bludot.com/media/catalog/product/f/d/fd1_lngchr_bh_frontlow-field-lounge-chair-tait-blush_2.jpg?optimize=medium&fit=bounds&height=1200&width=1500&canvas=1500:1200");
+}
+
+
+.product-content {
+    background: var(--primary-color);
+    padding: 27px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.product-content .product-name {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.b-container {
+    text-align: center;
+
+}
+
+.b-container button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+/*Why Us section*/
+.why-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.why-us .img-layer .img{
+    width: 400px;
+    height: 400px;
+    background: url("https://i.pinimg.com/736x/b2/6b/1e/b26b1eac41f1b60a46ba679b51070e42.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.card-fill{
+    background: rgb(173, 175, 176);
+    position: relative;
+}
+ .star{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    background: var(--primary-color);
+    position: absolute;
+    top: -16px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    border-radius: 100%;
+}
+.card h1{
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.card p{
+    color: rgb(72, 71, 71);
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.card-offwhite{
+    background:#f1f1ef;
+}
+
+/*Features section*/
+.features{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/*Footer*/
+footer{
+    background: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin-top: 10rem;
+}
+footer .logo-container h1{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+}
+footer .logo-container p{
+    max-width: 400px;
+    font-family: var(--main-font);
+    line-height: 25px;
+}
+.about-company{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-company .container{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.about-company .container h1{
+    margin-bottom: 50px;
+}
+.about-company .container p{
+    margin-right: 40px;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+}
+/*REsponsiveness*/
+
+@media only screen and (max-width:1150px) {
+    .img-container{
+        width: 300px;
+        height: 300px;
+    }
+    .d-none{
+        display: none;
+    }
+    .popularity{
+        margin-top: 20rem;
+     
+    }
+}
+@media only screen and(max-width:900px) {
+    header{
+        height: 120vh;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    header .img-container img{
+        margin-top: 4rem;
+    }
+    header .content-container{
+        margin-bottom:6rem ;
+        margin-top: 4rem;
+        margin-left:0 ;
+    }
+    .popularity{
+        margin-top: 22rem;
+        text-align: center;
+    }
+}
+@media only screen and(max-width:600px) {
+    .primary-heading{
+        width: 350px;
+    }
+    .img-container{
+        width: 350px;
+        height: 350px;
+    }
+    header .img-container img{
+        margin: 10rem;
+    }
+    .popularity div h1{
+        font-size: 2rem;
+    }
+    .popularity div{
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 7rem;
+  }
+}
