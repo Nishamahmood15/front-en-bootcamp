@@ -389,4 +389,14 @@ footer .about-company .container{
         margin: 0 auto;
         margin-top: 7rem;
   }
+  .main-heading{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cards{
+    margin-right: 5rem;
+  }
+  .card-fill{
+    margin-left: 10px;
+  }
 }
