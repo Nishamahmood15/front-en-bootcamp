@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #3c255ad7;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper .loader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+.loader .loading{
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius:50px ;
+    margin: 0 10px;
+    animation :load 0.8s infinite;
+}
+.loading-bar{
+    background: white;
+    width: 40px;
+    height: 10px;
+    border-radius:50px ;
+    margin: 0 10px;
+    animation :loading-bar 0.8s reverse infinite;
+   
+}
+.loader .loading.one{
+    animation-delay: 0.3s;
+}
+.loader .loading.two{
+    animation-delay: 0.7s;
+}
+.loader .loading.three{
+    animation-delay: 0.9s;
+}
+.loader .loading.four{
+    animation-delay: 1.0s;
+}
+/*Bars animation*/
+.loader .loading-bar.one{
+    animation-delay: 0.1s;
+}
+.loader .loading-bar.two{
+    animation-delay: 0.4s;
+}
+.loader .loading-bar.three{
+    animation-delay: 0.8s;
+}
+.loader .loading-bar.four{
+    animation-delay: 1.2s;
+}
+@keyframes load {
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+@keyframes loading-bar {
+    0%{
+        width: 10px;
+        
+    }
+    50%{
+        width: 30px;
+    
+    }
+    
+}
