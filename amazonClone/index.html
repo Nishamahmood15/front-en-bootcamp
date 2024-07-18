@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazonClone.com</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!--Nab-bar -->
+    <nav class="nav-bar">
+        <div class="logo w-border">
+            <h1>amazon</h1>
+        </div>
+        <div class="delivery w-border">
+            <h2>
+                 Deliver to <br>
+                 <i class="fa fa-map-marker"></i>
+                 <span>Pakistan</span>
+            </h2>
+        </div>
+        <div class="search-line">
+            <select id="list">
+                <option value="All">All</option>
+                <option value="All department">All Department</option>
+                <option value="Art & Crafts">Art & Crafts</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Books">Books</option>
+                <option value="Deals">Deals</option>
+                <option value="Computer">Computer</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Girl's Fashion">Girl's Fashion</option>
+                <option value="Boy's Fashion">Boy's Fashion</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="Home Accesories">Home Accesories</option>
+                <option value="Digital">Digital</option>
+            </select>
+            <input id="search-bar" type="search" placeholder="Search Amazon">
+            <button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+            <div class="w-border">
+                <select id="Language">
+                    <option value="EN">EN</option>
+                    <option value="Englis UK">English UK</option>
+                    <option value="AEnglish USA">English USA</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Espanol">Espanol</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Dutches">Ducthes</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="GERman">German</option>
+                    <option value="Korean">Korean</option>
+                </select>
+            </div>
+        <div class="sign-in w-border">
+            <h2>Hello, sign in <br>
+                <span>Account & Lists</span>
+            </h2>
+        </div>
+        <div class="w-border order-detail">
+            <h2>Returns <br>
+                <span>& Orders</span>
+            </h2>
+        </div>
+        <div class="w-border cart">
+            <i class="fa fa-shopping-cart" style="font-size:30px"></i><span> Cart</span>
+        </div>
+    </nav>
+    <!--Nav-bar with list-->
+    <section class="nav-bar-list">
+      
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span> 
+            </div>
+            <h3>All</h3>
+            <div class="nav-list-categories">
+                <ul>
+                    <li>Today's Deals</li>
+                    <li>Customer Services</li>
+                    <li>Registry</li>
+                    <li>Gift Cards</li>
+                    <li>Sell</li>
+                </ul>
+            </div>
+    </section>
+    <!--Hero section with slider-->
+    <section class="hero">
+        <!--Image carousel-->
+        <div class="carousel-wrapper">
+            <span id="item-1"></span>
+            <span id="item-2"></span>
+            <span id="item-3"></span>
+            <span id="item-4"></span>
+            <span id="item-5"></span>
+            <div class="carousel-item item-1">
+                <a href="#item-5" class="arrow-prev arrow"></a>
+                <a href="#item-2" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-2">
+                <a href="#item-1" class="arrow-prev arrow"></a>
+                <a href="#item-3" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-3">
+                <a href="#item-2" class="arrow-prev arrow"></a>
+                <a href="#item-4" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-4">
+                <a href="#item-3" class="arrow-prev arrow"></a>
+                <a href="#item-5" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-5">
+                <a href="#item-4" class="arrow-prev arrow"></a>
+                <a href="#item-1" class="arrow-next arrow"></a>
+            </div>
+
+        </div>
+        <!--Hero-Cards-->
+        <div class="hero-cards">
+            <div class="h-card">
+                <h2 class="card-heading">Deals in Pc</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt=""> <br>
+                <a href="">See More</a>
+            </div>
+            <div class="h-card">
+                <h2 class="card-heading">Easy Update for elevate space</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg" alt=""> <br>
+                <a href="">Shop home products</a>
+            </div>
+            <div class="h-card">
+                <h2 class="card-heading">Fashion Trend you like</h2>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/carla-rockmore38234-64b6b17187b5e.jpg?resize=1200:*" alt=""> <br>
+                <a href="">Explore More</a>
+            </div>
+            <div class="h-card">
+                <h2 class="card-heading">Shop best-selling categories </h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/TopCategories/Fuji_TopCategories_Dash_1X._SY304_CB601797995_.jpg" alt=""> <br>
+                <a href="">See More</a>
+            </div>
+            
+        </div>
+    </section>
+    <!--Second Card section-->
+    <section class="sec-card-container">
+        <div class="sec-cards">
+            <div class="s-card">
+                <h2 class="card-heading">Toys Under $25</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg" alt=""> <br>
+                <a href="">See More</a>
+            </div>
+            <div class="s-card">
+                <h2 class="card-heading">Home decor under $50</h2>
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v6._SY304_CB573698005_.jpg" alt=""> <br>
+                <a href="">See More</a>
+            </div>
+            <div class="s-card">
+                <h2 class="card-heading">Gaming Accesories</h2>
+                <img src="https://www.newegg.com/insider/wp-content/uploads/2022/01/Blue-Accesories.jpg" alt=""> <br>
+                <a href="">See More</a>
+            </div>
+            <div class="s-card">
+                <h2 class="card-heading">Refresh Your space</h2>
+                <div class="four-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt="">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt="">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt="">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt="">
+                </div>
+                <br>
+                <a href="">See More</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Feedback sigin-->
+    <section class="feedback-signin">
+        <div class="feedback">
+            <h5 class="feed-heading">Personalized recommendations</h5>
+            <button class="signin-btn">Sign in</button>
+            <p class="new-customer">New Customer? <a href="" class="sign-in-link">Start here.</a></p>
+        </div>
+       
+    </section>
+     <!--Back to top link-->
+     <div class="back-to-top">
+        <a href="">Back to top</a>
+     </div>
+     <!--Footer-->
+     <footer>
+        <div class="footer-content">
+            <div class="to-know">
+                <h2 class="footer-heading">Get to know Us</h2>
+                <a href="">Career</a><br>
+                <a href="">Blog</a><br>
+                <a href="">About Amazon</a><br>
+                <a href="">Investor Relations</a><br>
+                <a href="">Amazon Devices</a><br>
+                <a href="">Amazon Science</a>
+            </div>
+            <div class="make-money">
+                <h2 class="footer-heading">Make Money with Us</h2>
+                <a href="">Sell product on amazon</a><br>
+                <a href="">Sell on Amazon business</a><br>
+                <a href="">Sell app on Amazon</a><br>
+                <a href="">Become an Affiliate</a><br>
+                <a href="">Advertise your products</a><br>
+                <a href="">Self-publish with us</a><br>
+                <a href="">Host an amazon hub</a><br>
+                <a href="">> See more to make money with us</a>
+            </div>
+            <div class="Amazon-payment">
+                <h2 class="footer-heading">Amazon payment products</h2>
+                <a href="">Career</a><br>
+                <a href="">Blog</a><br>
+                <a href="">About Amazon</a><br>
+                <a href="">Investor Relations</a><br>
+                <a href="">Amazon Devices</a>
+            </div>
+            <div class="help-you">
+                <h2 class="footer-heading">Let us help you</h2>
+                <a href="">Amazon and COVID-19</a><br>
+                <a href="">Your Account</a><br>
+                <a href="">Your Orders</a><br>
+                <a href="">Shipping rates and policies</a><br>
+                <a href="">Returns & Replaccements</a><br>
+                <a href="">Help</a>
+            </div>
+            
+        </div>
+        <div class="hr-line"></div>
+        <div class="footer-logo-links">
+            <div class="logo">
+                <h1>amazon</h1>
+            </div>
+          <div class="lang">
+            <select id="Lang">
+                <option value="EN">ENGLISH</option>
+                <option value="Englis UK">English UK</option>
+                <option value="AEnglish USA">English USA</option>
+                <option value="UAE">UAE</option>
+                <option value="Espanol">Espanol</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Dutches">Ducthes</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="GERman">German</option>
+                <option value="Korean">Korean</option>
+            </select>
+          </div>
+          <div class="Rs">
+            <p>$ USD-U.S Dollar</p>
+          </div>
+          <div class="state">
+            <p><i class="fa fa-globe" style="font-size:20px"></i> United states</p>
+          </div>
+        </div>
+     </footer>
+</body>
+
+</html>
